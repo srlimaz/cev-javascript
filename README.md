@@ -18,14 +18,39 @@
 ### Tipos primitivos (Data types)
 
 number
-    infinity
-    NaN
+- infinity
+- NaN
 string
 boolean
 null
 undefined
 object
-    Array
+- Array
 function
 
 - typeof: mostra qual o tipo da variavel.
+
+Number.parseInt(n) - converte para numero inteiro.
+Number.parseFloat(n) - converte para numero real.
+Number - deixa o próprio js decidir.
+String(n) ou n.toString() - converte de número para string.
+
+Exemplo:
+
+var n1 = 1543.5
+
+**Formatação de número**
+n1.toFixed(n) - Alterando o 'n', você irá alterar a quantidade de casas depois da ','. EX: n1.toFixed(2) - o resultado será: 1543.50 pois está dizendo para deixar com duas casas decimais depois da virgula.
+.replace('1','2') - Altera de um para o outro. Usando o código em questão todo numero '1' seria alterado para o numero '2'.
+n1.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'}) - irá localizar o valor e mostrar R$ 1.543,50
+
+Exemplo:
+    var s = 'Javascript'
+    'Eu estou aprendendo s' // Não faz interpolação
+    'Eu estou aprendendo ' + s // Usa concatenação
+    `Eu estou aprendendo ${s}` // Usa template string
+
+**Formatação de texto**
+s.length - quantos caracteres a string tem.
+s.toUpperCase() - tudo para 'MAIÚSCULAS'
+s.toLowerCase() - tudo para 'minúsculas'
